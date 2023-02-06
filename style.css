@@ -1,0 +1,208 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Karla:ital,wght@0,400;1,700&display=swap');
+
+
+html {
+    font-family: 'Karla', sans-serif;
+    font-size: 22px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(41, 37, 37);
+}
+
+#navbar {
+    width: 100%;
+    height: 12vh;
+    position: fixed;
+    top: 0;
+    background-color: navy;
+    z-index: 1;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.nav_link {
+    margin-right: 25px;
+    list-style: none;
+
+}
+.nav_link a:hover {
+    cursor: pointer;
+    color: tomato;
+}
+
+a {
+    color: ivory;
+    text-decoration: none;
+}
+section {
+    margin-bottom: 100px;
+    
+}
+#welcome-section {
+    margin-top: 65px;
+    width: 100%;
+    height: 100vh;
+    background: url("code1.jpeg");
+    background-size: 100% 100vh;
+}
+
+
+.welcome {
+    position: absolute;
+    color: azure;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    top: 45vh;
+    
+   
+}
+
+
+.welcome_p {
+
+    padding: 0 20px;
+    margin-top: 50px;
+}
+.welcome p, span {
+    font-family: 'Dancing Script', cursive;
+    font-size: 32px;
+    color: tomato;
+}
+
+.name {
+    font-size: 45px;
+    font-weight: bold;
+}
+.name:hover {
+    color: rgb(240, 212, 122);
+}
+.welcome p:hover {
+    color: rgb(240, 212, 122);
+}
+
+.sub_title {
+    text-align: center;
+    color: ivory;
+    font-size: 50px;
+    margin: 15px auto;
+}
+.proj_i {
+    font-size: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
+.project-img {
+    height: 300px;
+    width: 350px;
+    margin-bottom: 5px;
+}
+#html_css, #python {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.proj {
+    height: 420px;
+    width: 350px;
+    padding: 15px 22px;
+    margin: 30px 20px;
+    background-color: tomato;
+    text-align: center;
+}
+.project-title {
+    height: 60px;
+}
+.seb {
+    border-color:  rgb(41, 37, 37);
+}
+
+.contact_link {
+    height: 50px;
+    width: 250px;
+    background-color: tomato;
+    border-radius: 3%;
+    margin: 10px auto 50px auto;
+    display: block;
+    text-align: center;
+    padding-top: 15px;
+}
+#profile-link {
+    font-size: 30px;
+}
+
+#contact {
+    text-align: center;
+    color: ivory;
+    font-size: 40px;
+    padding: 0 20px;
+    margin-bottom: 45px;
+
+}
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 80px;
+    padding-bottom: 25px;
+}
+.contact-container a {
+    margin: 10px 30px;
+}
+
+.contact_tite, .contact_p {
+    margin: 25px auto;
+}
+.contact_p {
+    font-family: 'Dancing Script', cursive;
+}
+.contact_hr {
+    margin: 15px 20vw;
+    border-color: tomato;
+}
+
+footer {
+    background-color: navy;
+    height: 10vh;
+    text-align: end;
+    padding: 20px 30px 0 30px;
+}
+.by {
+    margin: 0;
+    color: ivory;
+}
+
+@media (max-width: 730px){
+    #navbar {
+        height:auto;
+    }
+    #navbar ul {
+        justify-content: space-between;
+        
+    }
+    .nav_link {
+        margin-top: 5px;
+    }
+    .contact_tite, .contact_p {
+        margin: 5px auto;
+    }
+    #contact {
+        margin-bottom: 25px;
+        font-size: 35px;
+    }
+    #contact i {
+        font-size: 40px;
+    }
+}
